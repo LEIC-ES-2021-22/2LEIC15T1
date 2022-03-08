@@ -23,3 +23,5 @@ To do (see the Product vision template here: https://uxstudioteam.com/ux-blog/pr
 
 ## Required API's
 - Student timetable from sigarra
+- Curricular unit information from sigarra
+- Professor information from sigarra
