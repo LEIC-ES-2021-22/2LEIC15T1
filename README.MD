@@ -11,8 +11,10 @@
 
 # Product Name
 
+- SigarraIO
+
 ## Vision Stament
-To do (see the Product vision template here: https://uxstudioteam.com/ux-blog/product-vision/)
+Os alunos da faculdade experienciam problemas com a obtenção de informação curricular no Sigarra, principalmente na versão mobile. Desta forma, com a nossa aplicação, pretendemos criar uma alternativa eficiente para a visualização de dados fundamentais para o desenvolvimento académico do aluno, desde informações das disciplinas a docentes e aulas. 
 
 ## Main Features
  - Feature 1 - Curricular Unit Information
@@ -25,3 +27,5 @@ To do (see the Product vision template here: https://uxstudioteam.com/ux-blog/pr
 - Student timetable from sigarra
 - Curricular unit information from sigarra
 - Professor information from sigarra
+- Classroom map from sigarra
+
