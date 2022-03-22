@@ -68,3 +68,14 @@
 | *Postconditions* | - The student gets all the information about the professor.|
 | *Normal flow* | 1. The student logs in to the app(if not already logged in).<br> 2. The application shows the personal info and the schedule.<br> 3. The student selects the curricular unit info through the personal info.<br> 4. The application shows the professor info. |
 | *Alternative flows and exceptions* |1.[Schedule flow] If wanted, the student can choose the curricular unit info through the schedule .|
+
+|||
+| --- | --- |
+| *Name* | Get Academic Pathway of the student |
+| *Actor* |  Student | 
+| *Description* | The student is able to check all the curricular units in which he/she has already enrolled
+ and obtain information about the grades obtained in each curricular unit, as well as the credits that each UC is worth  |
+| *Preconditions* | - The student is registered in some UCs <br> - The student must be logged in. |
+| *Postconditions* | - The student sees every UC grades and credits. |
+| *Normal flow* | 1. The student logs in to the app(if not already logged in)<br> 2. The application shows the personal info and the schedule.<br> 3. The user can get detailed information about is pathway clicking in the personal info. |
+| *Alternative flows and exceptions* | 1. [No UCs failure] If, in step 3 of the normal flow the student is not registered in at least 1 UC then that field is blank. |
