@@ -73,8 +73,7 @@
 | --- | --- |
 | *Name* | Get Academic Pathway of the student |
 | *Actor* |  Student | 
-| *Description* | The student is able to check all the curricular units in which he/she has already enrolled
- and obtain information about the grades obtained in each curricular unit, as well as the credits that each UC is worth  |
+| *Description* | The student is able to check all the curricular units in which he/she has already enrolled and obtain information about the grades obtained in each curricular unit, as well as the credits that each UC is worth  |
 | *Preconditions* | - The student is registered in some UCs <br> - The student must be logged in. |
 | *Postconditions* | - The student sees every UC grades and credits. |
 | *Normal flow* | 1. The student logs in to the app(if not already logged in)<br> 2. The application shows the personal info and the schedule.<br> 3. The user can get detailed information about is pathway clicking in the personal info. |
