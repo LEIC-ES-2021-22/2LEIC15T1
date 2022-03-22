@@ -16,9 +16,11 @@
 ## Vision Stament
 Os alunos da faculdade experienciam problemas com a obtenção de informação curricular no Sigarra, principalmente na versão mobile. Desta forma, com a nossa aplicação, pretendemos criar uma alternativa eficiente para a visualização de dados fundamentais para o desenvolvimento académico do aluno, desde informações das disciplinas a docentes e aulas. 
 
+*Click here for english*
+
 ## Main Features
  - Feature 1 - Curricular Unit Information
- - Feature 2 - Teacher Information
+ - Feature 2 - Professor Information
  - Feature 3 - Rooms Mapping (Classroom location)
  - Feature 4 - Schedule exporter (Google Calendar)
  - Feature 5 - Personal Academic Pathway
