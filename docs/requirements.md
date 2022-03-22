@@ -1,3 +1,10 @@
+# Requirements
+
+## Use Case Model
+
+![img](diagrams/Use-Case-ES.svg)
+
+## Classroom Location
 |||
 | --- | --- |
 | *Name* | Get Classroom Location |
@@ -8,6 +15,7 @@
 | *Normal flow* | 1. The students logs in to the app (if not already logged in) <br> 2. The application shows the student's schedule <br> 3. The student selects a specific curricular unit through the schedule<br> 4. The student clicks on the classroom they want to know the location of. <br> 5. The application shows the location and trajectory to the classroom. |
 | *Alternative flows and exceptions* | 1. [Schedule Flow] In step 3 the student instead can simply click on a specific classroom, skipping step 4. <br> 2. [Personal Academic Pathway Flow] The student on step 2 can instead choose a specific curricular unit through their personal academic pathway. |
 
+## Curricular Unit Schedule
 
 |||
 | --- | --- |
@@ -19,6 +27,8 @@
 | *Normal flow* | 1. The student opens the app<br> 2.  Selects personal schedule <br> 3. Selects the curricular unit <br> 4. The student selects the option to see the unit schedule.
 | *Alternative flows and exceptions* | 1. If the student selects the option with the personal information then the app follows the same flow as before. Instead of selecting from their personal schedule the student can select from the list of curricular units they’re enrolled for. |
 
+## Curricular Unit Info
+
 |||
 | --- | --- |
 | *Name* | Get Curricular Unit Info |
@@ -28,6 +38,8 @@
 | *Postconditions* | - The student goes to the page with all of the curricular unit’s information. |
 | *Normal flow* | 1. The student opens the app.<br> 2. Selects personal schedule.<br> 3. Selects the preferred curricular unit. |
 | *Alternative flows and exceptions* | 1. The student can select personal info instead of personal schedule in step 2. |
+
+## Personal Info
 
 |||
 | --- | --- |
@@ -39,6 +51,8 @@
 | *Normal flow* | 1. The student opens the app<br>2. Goes through the main menu and selects the schedule option. |
 | *Alternative flows and exceptions* | 1. [No schedule available] if the student does not have an assigned schedule. |
 
+## Schedule Export
+
 |||
 | --- | --- |
 | *Name* | Schedule Export|
@@ -48,6 +62,8 @@
 | *Postconditions* | - The student gets a file corresponding to their schedule|
 | *Normal flow* | 1. The student opens the app<br>2. Goes through the main menu and selects the schedule option. <br> 3.The students selects the option to extract the schedule to a file.|
 | *Alternative flows and exceptions* | 1. [No schedule available] if the student does not have an assigned schedule. |
+
+## Login
 
 |||
 | --- | --- |
@@ -69,9 +85,11 @@
 | *Normal flow* | 1. The student logs in to the app(if not already logged in).<br> 2. The application shows the personal info and the schedule.<br> 3. The student selects the curricular unit info through the personal info.<br> 4. The application shows the professor info. |
 | *Alternative flows and exceptions* |1.[Schedule flow] If wanted, the student can choose the curricular unit info through the schedule .|
 
+## Get Academic Pathway
+
 |||
 | --- | --- |
-| *Name* | Get Academic Pathway of the student |
+| *Name* | Get Academic Pathway |
 | *Actor* |  Student | 
 | *Description* | The student is able to check all the curricular units in which he/she has already enrolled and obtain information about the grades obtained in each curricular unit, as well as the credits that each UC is worth  |
 | *Preconditions* | - The student is registered in some UCs <br> - The student must be logged in. |
