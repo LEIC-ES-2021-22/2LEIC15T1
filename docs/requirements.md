@@ -5,32 +5,10 @@
 ![img](diagrams/Use-Case-ES.svg)
 
 
-## Schedule
-
-|||
-| *Name* | Schedule |
-| *Actor* |  Student | 
-| *Description* | The student gets their schedule for the current semester. |
-| *Preconditions* | - The student is logged in. <br> - The student is enrolled in at least one UC in the current semester.|
-| *Postconditions* | - The student gets their schedule.|
-| *Normal flow* | 1. The student opens the app<br>2. The schedule is presented in the home page. |
-| *Alternative flows and exceptions* | 1. [No schedule available] if the student does not have an assigned schedule. <br> 2 [Detailed schedule] The student can click on the schedule on step 2 for a more detailed view.|
-
-
-## Schedule Export
-
-|||
-| *Name* | Schedule Export |
-| *Actor* |  Google Calendar API | 
-| *Description* | Exports the student's schedule to a third-party calendar file, usable by google calendar |
-| *Preconditions* | - The student is logged in <br> - The student is enrolled in at least one UC in the current semester. |
-| *Postconditions* | - The student gets a calender file to use in third party applications |
-| *Normal flow* | 1. The student opens the app<br>2. Goes through the main menu and selects the detailed schedule option. <br> 3.The students selects the option to export the schedule to a calendar file.|
-| *Alternative flows and exceptions* | 1. [No schedule available] if the student does not have an assigned schedule. |
-
 ## Login
 
-|||
+
+| --- | --- |
 | *Name* | Login |
 | *Actor* | Student | 
 | *Description* | The student logs in. |
@@ -41,7 +19,8 @@
 
 ## Academic Pathway
 
-|||
+
+| --- | --- |
 | *Name* | Academic Pathway |
 | *Actor* |  Student | 
 | *Description* | The student is able to check all the curricular units in which they have previously enrolled in and obtain information about the grades obtained in each curricular unit, as well as the credits that each UC is worth  |
@@ -53,7 +32,8 @@
 
 ## Professor Info
 
-|||
+
+| --- | --- |
 | *Name* | Professor Info |
 | *Actor* |  Student | 
 | *Description* | The student gets the professor information.|
@@ -64,7 +44,8 @@
 
 
 ## Classroom Location
-|||
+
+| --- | --- |
 | *Name* | Classroom Location |
 | *Actor* |  Student | 
 | *Description* | The student gets the location for a specific classroom with indication on how to get to the classroom in question |
@@ -75,7 +56,8 @@
 
 ## Curricular Unit Schedule
 
-|||
+
+| --- | --- |
 | *Name* | Curricular Unit Schedule |
 | *Actor* |  Student | 
 | *Description* | The student gets all the information about curricular unit's schedule |
@@ -86,7 +68,8 @@
 
 ## Curricular Unit Info
 
-|||
+
+| --- | --- |
 | *Name* | Get Curricular Unit Info |
 | *Actor* |  Student | 
 | *Description* | The student gets all the information of the desired curricular unit. |
@@ -95,6 +78,27 @@
 | *Normal flow* | 1. The student opens the app.<br> 2. Selects personal schedule.<br> 3. Selects the preferred curricular unit. |
 | *Alternative flows and exceptions* | 1. The student can select personal info instead of personal schedule in step 2. |
 
+## Schedule
 
+
+| --- | --- |
+| *Name* | Schedule |
+| *Actor* |  Student | 
+| *Description* | The student gets their schedule for the current semester. |
+| *Preconditions* | - The student is logged in. <br> - The student is enrolled in at least one UC in the current semester.|
+| *Postconditions* | - The student gets their schedule.|
+| *Normal flow* | 1. The student opens the app<br>2. The schedule is presented in the home page. |
+| *Alternative flows and exceptions* | 1. [No schedule available] if the student does not have an assigned schedule. <br> 2 [Detailed schedule] The student can click on the schedule on step 2 for a more detailed view.|
+
+## Schedule Export
+
+| --- | --- |
+| *Name* | Schedule Export |
+| *Actor* |  Google Calendar API | 
+| *Description* | Exports the student's schedule to a third-party calendar file, usable by google calendar |
+| *Preconditions* | - The student is logged in <br> - The student is enrolled in at least one UC in the current semester. |
+| *Postconditions* | - The student gets a calender file to use in third party applications |
+| *Normal flow* | 1. The student opens the app<br>2. Goes through the main menu and selects the detailed schedule option. <br> 3.The students selects the option to export the schedule to a calendarfile.|
+| *Alternative flows and exceptions* | 1. [No schedule available] if the student does not have an assigned schedule. |
 
 
