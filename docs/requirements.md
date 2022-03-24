@@ -7,7 +7,7 @@
 
 ## Login
 
-
+|||
 | --- | --- |
 | *Name* | Login |
 | *Actor* | Student | 
@@ -19,7 +19,7 @@
 
 ## Academic Pathway
 
-
+|||
 | --- | --- |
 | *Name* | Academic Pathway |
 | *Actor* |  Student | 
@@ -32,7 +32,7 @@
 
 ## Professor Info
 
-
+|||
 | --- | --- |
 | *Name* | Professor Info |
 | *Actor* |  Student | 
@@ -44,7 +44,7 @@
 
 
 ## Classroom Location
-
+|||
 | --- | --- |
 | *Name* | Classroom Location |
 | *Actor* |  Student | 
@@ -56,7 +56,7 @@
 
 ## Curricular Unit Schedule
 
-
+|||
 | --- | --- |
 | *Name* | Curricular Unit Schedule |
 | *Actor* |  Student | 
@@ -68,7 +68,7 @@
 
 ## Curricular Unit Info
 
-
+|||
 | --- | --- |
 | *Name* | Get Curricular Unit Info |
 | *Actor* |  Student | 
@@ -80,7 +80,7 @@
 
 ## Schedule
 
-
+|||
 | --- | --- |
 | *Name* | Schedule |
 | *Actor* |  Student | 
@@ -92,13 +92,14 @@
 
 ## Schedule Export
 
+|||
 | --- | --- |
 | *Name* | Schedule Export |
 | *Actor* |  Google Calendar API | 
 | *Description* | Exports the student's schedule to a third-party calendar file, usable by google calendar |
 | *Preconditions* | - The student is logged in <br> - The student is enrolled in at least one UC in the current semester. |
 | *Postconditions* | - The student gets a calender file to use in third party applications |
-| *Normal flow* | 1. The student opens the app<br>2. Goes through the main menu and selects the detailed schedule option. <br> 3.The students selects the option to export the schedule to a calendarfile.|
+| *Normal flow* | 1. The student opens the app<br>2. Goes through the main menu and selects the detailed schedule option. <br> 3.The students selects the option to export the schedule to a calendar file.|
 | *Alternative flows and exceptions* | 1. [No schedule available] if the student does not have an assigned schedule. |
 
 
