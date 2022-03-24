@@ -28,8 +28,8 @@ Current college students are experiencing problems with the acquisition of curri
  - Feature 5 - Personal Academic Pathway
 
 ## Required API's
-- Student timetable from sigarra
-- Curricular unit information from sigarra
-- Professor information from sigarra
-- Classroom map from sigarra
+- Student timetable from Sigarra
+- Curricular unit information from Sigarra
+- Professor information from Sigarra
+- Classroom map from Sigarra
 
