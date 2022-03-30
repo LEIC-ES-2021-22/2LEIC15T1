@@ -35,5 +35,5 @@ Current college students are experiencing problems with the acquisition of curri
 
 ## [Requirements](requirements.md)
 - [Use Case Model](requirements.md#use-case-model)
-- [User Stories](https://github.com/LEIC-ES-2021-22/2LEIC15T1/issues)
+- [User Stories](https://github.com/LEIC-ES-2021-22/2LEIC15T1/issues?q=is%3Aissue+is%3Aopen+label%3A%22User+Story%22)
 - [Domain Model](requirements.md#domain-model)
