@@ -26,7 +26,7 @@
 | *Description* | The student is able to check all the curricular units in which they have previously enrolled in and obtain information about the grades obtained in each curricular unit, as well as the credits that each UC is worth.  |
 | *Preconditions* | - The student is registered in at least one UC. <br> - The student is logged in. |
 | *Postconditions* | - The student sees every UC's grades and credits. |
-| *Normal flow* | 1. The student logs in to the app(if not already logged in)<br> 2. The application shows the personal info and the schedule.<br> 3. The student gets detailed information about their academic pathway. |
+| *Normal flow* | 1. The student logs in to the app(if not already logged in)<br> 2. The application shows the personal info and the schedule.<br> 3. The user clicks in personal info section and gets detailed information about their academic pathway. |
 | *Alternative flows and exceptions* | 1. [No UCs failure] If, in step 3 of the normal flow the student is not registered in at least 1 UC then that field is blank. |
 
 
