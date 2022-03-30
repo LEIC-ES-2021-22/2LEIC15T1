@@ -98,9 +98,35 @@
 | *Actor* |  Google Calendar API | 
 | *Description* | Exports the student's schedule to a third-party calendar file, usable by google calendar. |
 | *Preconditions* | - The student is logged in. <br> - The student is enrolled in at least one UC in the current semester. |
-| *Postconditions* | - The student gets a calender file to use in third party applications. |
+| *Postconditions* | - The student gets a calendar file to use in third party applications. |
 | *Normal flow* | 1. The student opens the app<br>2. Goes through the main menu and selects the detailed schedule option. <br> 3. The student selects the option to export the schedule to a calendar file.|
 | *Alternative flows and exceptions* | 1. [No schedule available] if the student does not have an assigned schedule. |
+
+
+### Search Bar
+
+|||
+| --- | --- |
+| *Name* | Search Bar |
+| *Actor* |  Student | 
+| *Description* | Searches the UC list with given code or name |
+| *Preconditions* | - The student is logged in. |
+| *Postconditions* | - The students gets results based on their search query. |
+| *Normal flow* | 1. The student opens the app<br>2. Goes through the main menu and selects the search option <br> 3. The student writes the query <br> 4. The student gets a result based on their query. |
+| *Alternative flows and exceptions* | 1. [No search results] if the student enters an invalid query |
+
+### External Appointments
+
+|||
+| --- | --- |
+| *Name* | Add Personal Appointments to Schedule |
+| *Actor* |  Student | 
+| *Description* | Adds non course related appointments to personal schedule |
+| *Preconditions* | - The student is logged in. |
+| *Postconditions* | - The students adds appointments to their app schedule |
+| *Normal flow* | 1. The student opens the app<br>2. Goes through the main menu and selects the personal schedule menu <br> 3. The student clicks on the add appointment button <br> 4. The student gets a pop up on which they can enter a third party calendar link to add appointments to their personal schedule. |
+| *Alternative flows and exceptions* | 1. [Invalid Link] if the student enters an invalid calendar link. |
+
 
 ## Domain Model
 
