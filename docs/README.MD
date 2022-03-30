@@ -33,3 +33,7 @@ Current college students are experiencing problems with the acquisition of curri
 - Professor information from Sigarra
 - Classroom map from Sigarra
 
+## [Requirements](https://github.com/LEIC-ES-2021-22/2LEIC15T1/blob/main/docs/requirements.md)
+- [Use Case Model](https://github.com/LEIC-ES-2021-22/2LEIC15T1/blob/main/docs/requirements.md#Use-Case-Model)
+- [User Stories](https://github.com/LEIC-ES-2021-22/2LEIC15T1/blob/main/docs/requirements.md#Login)
+- [Domain Model]
