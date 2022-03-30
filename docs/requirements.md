@@ -103,3 +103,7 @@
 | *Alternative flows and exceptions* | 1. [No schedule available] if the student does not have an assigned schedule. |
 
 ## Domain Model
+
+![img](diagrams/SigarraIO_UML.svg)
+
+### Class Description
