@@ -2,7 +2,7 @@
 
 ## Use Case Model
 
-![img](diagrams/use-case 2.svg)
+![img](diagrams/use-case2.svg)
 
 
 ## Login
