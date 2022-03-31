@@ -133,3 +133,13 @@
 ![img](diagrams/SigarraIO_UML.svg)
 
 ### Class Description
+
+- **Person** - Class used to represent people in general, this is a parent class for the student and professor classes, we use this class to store the name, phone number, email adress and student/professor code.
+
+- **Student** - Subclass of person, besides attributes stored in person, this also stores the student's password for login.
+
+- **Professor** - Sublcass of person, used to store the professor's personal presentation, areas of interest, category (e.g the kind of professor), department, acronym and state. We have to store this data due to the professor's information page.
+
+- **Room** - UML class to store information related to a specific room on the university. This class is a parent class of Office and Classroom.
+
+- **Office/Classroom** - Both of these classes are subclasses of room, they exist to simply distinguish between the two kinds of room.
