@@ -142,4 +142,4 @@
 
 - **Room** - UML class to store information related to a specific room on the university. This class is a parent class of Office and Classroom.
 
-- **Office/Classroom** - Both of these classes are subclasses of room, they exist to simply distinguish between the two kinds of room.
+- **Office/Classroom** - Both of these classes are subclasses of room, they exist to simply distinguish between the two kinds of rooms.
