@@ -140,8 +140,19 @@
 
 - **Professor** - Sublcass of person, used to store the professor's personal presentation, areas of interest, category (e.g the kind of professor), department, acronym and state. We have to store this data due to the professor's information page.
 
+- **Availability** - Class which is responsible for atributting their respective professor's free time for answering and interacting with students.
+
 - **Room** - UML class to store information related to a specific room on the university. This class is a parent class of Office and Classroom.
 
 - **Office/Classroom** - Both of these classes are subclasses of room, they exist to simply distinguish between the two kinds of rooms.
 
-- **Subject** - UML class to represent the subjects that professors teach, 
+- **Subject** - UML class to represent the subjects that professors teach.
+
+- **Subject/Grade** - Association class between student and subject that stores if the student has passed said grade, and their respective numeral grade (0-20)
+
+- **Class** - Stores data and is used to represent wheere classes (lectures) that take place inside the university.
+
+- **Schedule** - Collection of classes (lectures) to represent both the student's and subject's respective weekly schedule.
+
+- **Course** - Collection of subjects in which the student is enrolled in, these courses each have at least one regent professor.
+
