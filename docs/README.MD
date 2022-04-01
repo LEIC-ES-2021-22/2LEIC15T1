@@ -26,9 +26,7 @@ Current college students are experiencing problems with the acquisition of curri
  - Feature 3 - Rooms Mapping (Classroom location)
  - Feature 4 - Schedule exporter (Google Calendar)
  - Feature 5 - Personal Academic Pathway
-## Figma Mockup
- We created this [model](https://www.figma.com/proto/sAyUiD62WYaqftdy0osayW/ES---SigarIO?node-id=1%3A90&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A90) to have a better understanding of the final product we wish to achieve, despite the fact that it might not look 100% the same as the delivered version. 
- 
+
 ## Required API's
 - Student timetable from Sigarra
 - Curricular unit information from Sigarra
@@ -39,4 +37,7 @@ Current college students are experiencing problems with the acquisition of curri
 - [Use Case Model](requirements.md#use-case-model)
 - [User Stories](https://github.com/LEIC-ES-2021-22/2LEIC15T1/issues?q=is%3Aissue+is%3Aopen+label%3A%22User+Story%22)
 - [Domain Model](requirements.md#domain-model)
-- [Figma Mockup](https://www.figma.com/proto/sAyUiD62WYaqftdy0osayW/ES---SigarIO?node-id=1%3A90&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A90)
+
+## Figma Mockup
+ We created this [model](https://www.figma.com/proto/sAyUiD62WYaqftdy0osayW/ES---SigarIO?node-id=1%3A90&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A90) to have a better understanding of the final product we wish to achieve, despite the fact that it might not look 100% the same as the delivered version. 
+ 
