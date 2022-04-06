@@ -40,7 +40,7 @@ Current college students are experiencing problems with the acquisition of curri
 
 ## [Architecture and Design](ArchitectureAndDesign.md)
 - [Logical Architecture](ArchitectureAndDesign.md#Logical-View)
-- [Physical Architecture]
+- [Physical Architecture](ArchitectureAndDesign.md#Physical-View)
 - [Vertical prototype]
 
 
