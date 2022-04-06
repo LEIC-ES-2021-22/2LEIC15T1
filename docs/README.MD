@@ -39,7 +39,7 @@ Current college students are experiencing problems with the acquisition of curri
 - [Domain Model](requirements.md#domain-model)
 
 ## [Architecture and Design](ArchitectureAndDesign.md)
-- [Logical Architecture](ArchitectureAndDesign.md#Logical-View
+- [Logical Architecture](ArchitectureAndDesign.md#Logical-View)
 - [Physical Architecture]
 - [Vertical prototype]
 
