@@ -38,6 +38,12 @@ Current college students are experiencing problems with the acquisition of curri
 - [User Stories](https://github.com/LEIC-ES-2021-22/2LEIC15T1/issues?q=is%3Aissue+is%3Aopen+label%3A%22User+Story%22)
 - [Domain Model](requirements.md#domain-model)
 
+## [Architecture and Design](ArchitectureAndDesign.md)
+- [Logical Architecture](ArchitectureAndDesign.md#Logical-View)
+- [Physical Architecture](ArchitectureAndDesign.md#Physical-View)
+- [Vertical prototype]
+
+
 ## Figma Mockup
  We created this [model](https://www.figma.com/proto/sAyUiD62WYaqftdy0osayW/ES---SigarIO?node-id=1%3A90&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A90) to have a better understanding of the final product we wish to achieve, despite the fact that it might not look 100% the same as the delivered version. 
  
