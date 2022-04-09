@@ -2,6 +2,33 @@
 ## Logical Architecture
 ![Logical View](diagrams/logicalView.svg)
 
+### Mobile App GUI
+  The interactive interface of the app, which will allow the student to navigate between features.
+
+### Classroom Logic
+  The information about the university's classrooms.
+  
+### Curricular Unit Logic
+  The information about every curricular unit the student is enrolled in.
+
+### Professor Logic
+  The information about every professor related to the curricular units the student is enrolled in.
+  
+### Grades
+  The student's grades, which are obtained from the Sigarra Database.
+
+### Profile
+  The student's profile, which is obtained from the Sigarra Database.
+  
+### Schedule
+  The student's schedule, which is obtained from the Sigarra Database.
+
+### Sigarra Database
+  Database from where we get the data relevant to the student.
+
+### Google Calendar
+  The app to which the schedule will be exported.
+
 ## Physical Architecture 
 ![Physical View](diagrams/physicalView.svg)
 
