@@ -15,7 +15,7 @@
 #### Application UI
   In direct contact with the User Client Machine this part is responsible for all the connecting between the logic and the user. As said before developed in Flutter with ease of use and accesibility in mind.
 #### Student Logic Service Management
-  The key part of the app logic in direct connecion with [FEUP Servers](https://github.com/LEIC-ES-2021-22/2LEIC15T1/edit/main/docs/ArchitectureAndDesign.md#feup-servers), handles all the requests recived by the users and returns with the correspondent actions or information.
+  The key part of the app logic in direct connecion with [FEUP Servers](https://github.com/LEIC-ES-2021-22/2LEIC15T1/blob/main/docs/ArchitectureAndDesign.md#feup-servers), handles all the requests recived by the users and returns with the correspondent actions or information.
 #### Schedule Exporting Logic
   Since exporting to Google Calendar is a selling point of our project this artifact is a must since it will be responsible for handling such matters.
   
