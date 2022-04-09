@@ -20,7 +20,7 @@
   Since exporting to Google Calendar is a selling point of our project this artifact is a must since it will be responsible for handling such matters.
   
 ### Google servers 
-  The necessary google connection to allow the [export feature](..) to work. 
+  The necessary google connection to allow the [export feature](https://github.com/LEIC-ES-2021-22/2LEIC15T1/blob/main/docs/ArchitectureAndDesign.md#schedule-exporting-logic) to work. 
 #### Google Calendar
   The exporting target of our feature.
   
