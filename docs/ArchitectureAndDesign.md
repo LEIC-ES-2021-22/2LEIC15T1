@@ -1,7 +1,14 @@
 
 ## Logical Architecture
-![Logical View](https://github.com/LEIC-ES-2021-22/2LEIC15T1/blob/main/docs/diagrams/logicalView.svg)
+![Logical View](diagrams/logicalView.svg)
 
 ## Physical Architecture 
-![Physical View](https://github.com/LEIC-ES-2021-22/2LEIC15T1/blob/main/docs/diagrams/physicalView.svg)
+![Physical View](diagrams/physicalView.svg)
+
 ## Vertical Prototype
+
+To verify all our various decisions so far, we created a small prototype of the login app page, using the flutter framework and dart language. Our current implementation is simply visual
+so that we could test its logic and functionality. 
+
+![Vertical Prototype](screenshots/prototype.png)
+
