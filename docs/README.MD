@@ -3,7 +3,7 @@
 
 ## Members
 
- - Eduardo Correira - 201909914
+ - Eduardo Correia - 201909914
  - José Carvalho - 202005827
  - João Moreira - 201905212
  - Tomás Gomes - 202004393
