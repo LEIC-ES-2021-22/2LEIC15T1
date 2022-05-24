@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'NavBar.dart';
-class MyStatefulWidgeta extends StatefulWidget {
-  const MyStatefulWidgeta({Key? key}) : super(key: key);
+class Settings extends StatefulWidget {
+  const Settings({Key? key}) : super(key: key);
 
   @override
-  State<MyStatefulWidgeta> createState() => _MyStatefulWidgetStatea();
+  State<Settings> createState() => SettingsStatus();
 }
 
-class _MyStatefulWidgetStatea extends State<MyStatefulWidgeta> {
+class SettingsStatus extends State<Settings> {
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class _MyStatefulWidgetStatea extends State<MyStatefulWidgeta> {
 
         ),
         body: const Center(
-          child: Text('homepage'),
+          child: Text('Settings'),
         ),
       ),
     );

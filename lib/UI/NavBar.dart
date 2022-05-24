@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:sigarraio/UI/personalschedule.dart';
+import 'package:sigarraio/UI/settings.dart';
+
+import 'academicpathway.dart';
 
 class NavBar extends StatelessWidget {
   @override
@@ -24,18 +28,28 @@ class NavBar extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.person),
             title: const Text('Personal Schedule'),
-            onTap: () => null,
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => PersonalSchedule()),
+            ),
           ),
           ListTile(
             leading: const Icon(Icons.calendar_month_sharp),
             title: const Text('Academic Pathway'),
-            onTap: () => null,
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => AcademicPathway()),
+            ),
           ),
           const Divider(),
           ListTile(
             leading: const Icon(Icons.settings),
             title: const Text('Settings'),
-            onTap: () => null,
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Settings()),
+            ),
+
           ),
           const Divider(),
           ListTile(
