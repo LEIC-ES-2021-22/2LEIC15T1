@@ -43,7 +43,7 @@ Current college students are experiencing problems with the acquisition of curri
 - [Physical Architecture](ArchitectureAndDesign.md#Physical-View)
 - [Vertical prototype](ArchitectureAndDesign.md#vertical-prototype)
 
-##  [Project management](https://github.com/LEIC-ES-2021-22/templates/blob/main/docs/ProjectManagement.md)
+* [Project management](https://github.com/LEIC-ES-2021-22/templates/blob/main/docs/ProjectManagement.md)
 
 ## Figma Mockup
  We created this [model](https://www.figma.com/proto/sAyUiD62WYaqftdy0osayW/ES---SigarIO?node-id=1%3A90&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A90) to have a better understanding of the final product we wish to achieve, despite the fact that it might not look 100% the same as the delivered version. 
