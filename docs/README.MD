@@ -3,7 +3,7 @@
 
 ## Members
 
- - Eduardo Correira - 201909914
+ - Eduardo Correia - 201909914
  - José Carvalho - 202005827
  - João Moreira - 201905212
  - Tomás Gomes - 202004393
@@ -41,7 +41,7 @@ Current college students are experiencing problems with the acquisition of curri
 ## [Architecture and Design](ArchitectureAndDesign.md)
 - [Logical Architecture](ArchitectureAndDesign.md#Logical-View)
 - [Physical Architecture](ArchitectureAndDesign.md#Physical-View)
-- [Vertical prototype]
+- [Vertical prototype](ArchitectureAndDesign.md#vertical-prototype)
 
 
 ## Figma Mockup
