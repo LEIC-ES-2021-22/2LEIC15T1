@@ -46,7 +46,7 @@ Current college students are experiencing problems with the acquisition of curri
 ##  Project management
 # Here you can find information and references related with the project management in our team.
 * Backlog management: Product backlog and Iteration backlog in a [Github Projects board](https://github.com/LEIC-ES-2021-22/templates/projects/1);
-* [Iterations Retrospectives](https://github.com/LEIC-ES-2021-22/2LEIC15T1/blob/main/docs/ProjectManagement.md): More detailed information about each realise, screenshots of the most nutritious parts and a realistic evaluation of the results.
+* [Iterations' Retrospective](https://github.com/LEIC-ES-2021-22/2LEIC15T1/blob/main/docs/ProjectManagement.md): More detailed information about each release, screenshots of the most nutritious parts and a realistic evaluation of the results.
 * Version list:
  - [V1.0] ()
 ## Figma Mockup
