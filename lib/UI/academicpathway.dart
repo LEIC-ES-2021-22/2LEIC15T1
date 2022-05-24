@@ -16,7 +16,7 @@ class AcademicPathwayStatus extends State<AcademicPathway> {
       home: Scaffold(
         drawer: NavBar(),
         appBar: AppBar(
-          title: const Text('SigarIO'),
+          title: const Text('Academic Pathway'),
 
         ),
         body: const Center(

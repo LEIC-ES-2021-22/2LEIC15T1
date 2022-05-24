@@ -16,7 +16,7 @@ class _MyStatefulWidgetStatea extends State<MyStatefulWidgeta> {
       home: Scaffold(
         drawer: NavBar(),
         appBar: AppBar(
-          title: const Text('SigarIO'),
+          title: const Text('DashBoard'),
 
         ),
         body: const Center(

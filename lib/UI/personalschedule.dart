@@ -16,8 +16,7 @@ class PersonalScheduleStatus extends State<PersonalSchedule> {
       home: Scaffold(
         drawer: NavBar(),
         appBar: AppBar(
-          title: const Text('SigarIO'),
-
+          title: const Text('Personal Schedule'),
         ),
         body: const Center(
           child: Text('Personal Schedule'),

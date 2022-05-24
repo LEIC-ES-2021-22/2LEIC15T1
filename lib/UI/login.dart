@@ -11,7 +11,8 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   TextEditingController nameController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+  TextEditingController _pass = TextEditingController();
+
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +51,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
               child: TextField(
                 obscureText: true,
-                controller: passwordController,
+                controller: _pass,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Password',
@@ -75,7 +76,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                     );
 
                     print(nameController.text);
-                    print(passwordController.text);
+                    print(_pass.text);
                   },
                 )
             ),

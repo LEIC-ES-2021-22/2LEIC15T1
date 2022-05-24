@@ -12,11 +12,11 @@ class SettingsStatus extends State<Settings> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'SigarIO',
+      title: 'Settings',
       home: Scaffold(
         drawer: NavBar(),
         appBar: AppBar(
-          title: const Text('SigarIO'),
+          title: const Text('Settings'),
 
         ),
         body: const Center(
