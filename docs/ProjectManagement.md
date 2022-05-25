@@ -1,13 +1,13 @@
 ## Iteration Retrospectives
 
-### Iteration 0
+### Iteration 0:
 #### [v0.0](https://github.com/LEIC-ES-2021-22/2LEIC15T1/releases/tag/v0.0)
 
 * Iteration planning and retrospectives: 
   * plans: login implementation;
   * retrospectives: good organization and time management allowed us to fulfill what we initially set ourselves to do.
 
-### Iteration 2
+### Iteration 2:
 #### [v1.0](https://github.com/LEIC-ES-2021-22/2LEIC15T1/releases/tag/v1.0)
 
 * Iteration planning and retrospectives: 
