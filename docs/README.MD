@@ -48,8 +48,8 @@ Current college students are experiencing problems with the acquisition of curri
 * Backlog management: Product backlog and Iteration backlog in a [Github Projects board](https://github.com/LEIC-ES-2021-22/2LEIC15T1/projects/1);
 * [Iterations' Retrospective](https://github.com/LEIC-ES-2021-22/2LEIC15T1/blob/main/docs/ProjectManagement.md): More detailed information about each release, screenshots of the most nutritious parts and a realistic evaluation of the results.
 * Version list:
- - [v0.0](https://github.com/LEIC-ES-2021-22/2LEIC15T1/releases/tag/v0.0)
- - [v1.0](https://github.com/LEIC-ES-2021-22/2LEIC15T1/releases/tag/v1.0)
+  - [v0.0](https://github.com/LEIC-ES-2021-22/2LEIC15T1/releases/tag/v0.0)
+  - [v1.0](https://github.com/LEIC-ES-2021-22/2LEIC15T1/releases/tag/v1.0)
 ## Figma Mockup
  We created this [model](https://www.figma.com/proto/sAyUiD62WYaqftdy0osayW/ES---SigarIO?node-id=1%3A90&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A90) to have a better understanding of the final product we wish to achieve, despite the fact that it might not look 100% the same as the delivered version. 
  
