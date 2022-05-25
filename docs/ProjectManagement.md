@@ -6,7 +6,7 @@
   * plans: login implementation;
   * retrospectives: good organization and time management allowed us to fulfill what we initially set ourselves to do. Since this was our first contact with flutter, it enabled us to learn more about dart and its associated programs.
 
-### Iteration 2 ([v1.0](https://github.com/LEIC-ES-2021-22/2LEIC15T1/releases/tag/v1.0))
+### Iteration 2 ([v1.0](https://github.com/LEIC-ES-2021-22/2LEIC15T1/releases/tag/v1.0)):
 
 * Iteration planning and retrospectives: 
   * plans: creating a functioning sidebar and dummy pages for each feature, with one completed feature. Updating login security;
