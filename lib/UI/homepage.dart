@@ -18,7 +18,6 @@ class _MyStatefulWidgetStatea extends State<MyStatefulWidgeta> {
         drawer: NavBar(),
         appBar: AppBar(
           title: const Text('DashBoard'),
-
         ),
         body: const Center(
           child: Text('homepage'),
