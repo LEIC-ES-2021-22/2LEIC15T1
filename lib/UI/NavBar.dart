@@ -8,12 +8,14 @@ class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: Colors.white,
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
           UserAccountsDrawerHeader(
-            accountName: const Text('Username'),
-            accountEmail: const Text('example@gmail.com'),
+            decoration: BoxDecoration(color: Colors.white),
+            accountName: const Text('Username',style: TextStyle(color: Colors.black),),
+            accountEmail: const Text('example@gmail.com',style: TextStyle(color: Colors.black),),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
                 child: Image.network(
