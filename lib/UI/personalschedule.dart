@@ -35,13 +35,10 @@ class PersonalScheduleStatus extends State<PersonalSchedule> {
   }
 
   List<Event> _getEventsForDay(DateTime day) {
-    // Implementation example
     return kEvents[day] ?? [];
   }
 
   List<Event> _getEventsForDays(Set<DateTime> days) {
-    // Implementation example
-    // Note that days are in selection order (same applies to events)
     return [
       for (final d in days) ..._getEventsForDay(d),
     ];
@@ -80,7 +77,6 @@ class PersonalScheduleStatus extends State<PersonalSchedule> {
             eventLoader: _getEventsForDay,
             startingDayOfWeek: StartingDayOfWeek.monday,
             selectedDayPredicate: (day) {
-              // Use values from Set to mark multiple days as selected
               return _selectedDays.contains(day);
             },
             onDaySelected: _onDaySelected,
