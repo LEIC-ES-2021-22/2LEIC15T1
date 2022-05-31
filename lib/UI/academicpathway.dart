@@ -62,7 +62,7 @@ class _Body extends StatelessWidget{
             children: <Widget> [
               Row(
                 children: <Widget>[
-                  Expanded(child:Center(child: Text('carlossssss'),)),
+                  Expanded(child:Center(child: FlatButton(onPressed: null,child:Text('carlossssss'),))),
                   Expanded(child:Center(child: Text('carlossssss'),)),
                   Expanded(child:Center(child: Text('carlossssss'),)),
                 ],
@@ -113,11 +113,15 @@ class _Body extends StatelessWidget{
                   new FlatButton(onPressed: null, child: Text('3rd Year')),
                 ],
               ),
-              Divider(
-                color: Colors.black,
-                height: 8,
-                indent:20,
-                endIndent: 20,
+              Container(
+                margin: EdgeInsets.only(bottom:15),
+                child: Divider(
+                  color: Colors.black,
+                  height: 1,
+                  thickness: 0.8,
+                  indent:40,
+                  endIndent: 40,
+                ),
               ),
               Row(
                 children: <Widget>[
