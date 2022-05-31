@@ -62,16 +62,16 @@ class _Body extends StatelessWidget{
             children: <Widget> [
               Row(
                 children: <Widget>[
-                  Expanded(child:Center(child: FlatButton(onPressed: null,child:Text('carlossssss'),))),
-                  Expanded(child:Center(child: Text('carlossssss'),)),
-                  Expanded(child:Center(child: Text('carlossssss'),)),
+                  Expanded(child:Center(child: FlatButton(onPressed: null,child:Text('Sistemas Operativos'),))),
+                  Expanded(child:Center(child: Text('aprovado'),)),
+                  Expanded(child:Center(child: Text('14'),)),
                 ],
               ),
               Row(
                 children: <Widget>[
-                  Expanded(child:Center(child: Text('carlossssss'),)),
-                  Expanded(child:Center(child: Text('carlossssss'),)),
-                  Expanded(child:Center(child: Text('carlossssss'),)),
+                  Expanded(child:Center(child: FlatButton(onPressed: null,child:Text('Engenharia de Software'),))),
+                  Expanded(child:Center(child: Text('aprovado'),)),
+                  Expanded(child:Center(child: Text('20'),)),
                 ],
               )
             ],
