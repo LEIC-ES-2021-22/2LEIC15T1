@@ -3,6 +3,7 @@ import 'package:sigarraio/UI/personalschedule.dart';
 import 'package:sigarraio/UI/settings.dart';
 
 import 'academicpathway.dart';
+import 'homepage.dart';
 
 class NavBar extends StatelessWidget {
   @override
@@ -25,6 +26,14 @@ class NavBar extends StatelessWidget {
                   height: 90,
                 ),
               ),
+            ),
+          ),
+          ListTile(
+            leading: const Icon(Icons.developer_board),
+            title: const Text('Dashboard'),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => MyStatefulWidgeta()),
             ),
           ),
           ListTile(
