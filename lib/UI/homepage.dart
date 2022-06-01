@@ -16,7 +16,7 @@ class _MyStatefulWidgetStatea extends State<MyStatefulWidgeta> {
 
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) => _onDaySelected(kToday));
+    WidgetsBinding.instance!.addPostFrameCallback((_) => _onDaySelected(kToday));
   }
 
   // Using a `LinkedHashSet` is recommended due to equality comparison override

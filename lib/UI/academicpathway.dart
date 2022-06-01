@@ -1,5 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'NavBar.dart';
+import 'package:sigarraio/model/CourseUnit.dart';
+
+
 class AcademicPathway extends StatefulWidget {
   const AcademicPathway({Key? key}) : super(key: key);
 
@@ -62,7 +67,7 @@ class _Body extends StatelessWidget{
             children: <Widget> [
               Row(
                 children: <Widget>[
-                  Expanded(child:Center(child: FlatButton(onPressed: null,child:Text('carlossssss'),))),
+                  Expanded(child:Center(child: FlatButton(onPressed: null,child:Text('Sistemas Operativos'),))),
                   Expanded(child:Center(child: Text('carlossssss'),)),
                   Expanded(child:Center(child: Text('carlossssss'),)),
                 ],
