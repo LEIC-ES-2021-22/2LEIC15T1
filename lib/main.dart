@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: _title,
       home: Scaffold(
         appBar: AppBar(title: const Text(_title)),
-        body: const MyStatefulWidget(),
+        body: LoginPageView(),
       ),
     );
   }
