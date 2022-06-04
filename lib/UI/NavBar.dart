@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:sigarraio/UI/personalschedule.dart';
 import 'package:sigarraio/UI/settings.dart';
+import 'package:sigarraio/UI/welcomepage.dart';
 
+import '../controller/logout_action.dart';
 import 'academicpathway.dart';
 import 'homepage.dart';
 
@@ -66,7 +68,12 @@ class NavBar extends StatelessWidget {
           ListTile(
             title: const Text('Logout'),
             leading: const Icon(Icons.exit_to_app),
-            onTap: () => null,
+            onTap: () async {
+              bool loggedOut = await logout();
+              if (loggedOut) {
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => WelcomePage(),),);
+              }
+            },
           ),
         ],
       ),

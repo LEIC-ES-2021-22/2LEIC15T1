@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:sigarraio/UI/welcomepage.dart';
 
 import 'UI/login.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -13,10 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: _title,
-      home: Scaffold(
-        appBar: AppBar(title: const Text(_title)),
-        body: LoginPageView(),
-      ),
+      home : WelcomePage(),
     );
   }
 }
