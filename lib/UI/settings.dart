@@ -17,7 +17,9 @@ class SettingsStatus extends State<Settings> {
       home: Scaffold(
         drawer: NavBar(),
         appBar: AppBar(
-          title: const Text('Settings'),
+          title: const Text('Settings',style:TextStyle(color: Colors.black)),
+          backgroundColor: Colors.white,
+          iconTheme: IconThemeData(color: Colors.black),
         ),
         body: buildSettingsList(),
       ),
