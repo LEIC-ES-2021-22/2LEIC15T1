@@ -15,6 +15,8 @@ Future<bool> login(String username, String password) async {
   var response = await http.post(Uri.parse(loginUrl), body: {'pv_login': username, 'pv_password': password});
   if (response.statusCode == 200) {
     await sharedPreferences.setString('token', "Token ${jsonDecode(response.body)['token']}");
+    print(jsonDecode(response.body));
+    await sharedPreferences.setString('codigo', jsonDecode(response.body)['codigo']);
     return true;
   }
   else {
