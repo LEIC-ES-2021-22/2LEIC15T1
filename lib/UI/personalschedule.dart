@@ -6,6 +6,7 @@ import 'dart:collection';
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 
+import '../model/Profile.dart';
 import 'utils.dart';
 import 'NavBar.dart';
 
@@ -17,6 +18,7 @@ class PersonalSchedule extends StatefulWidget {
 }
 
 class PersonalScheduleStatus extends State<PersonalSchedule> {
+
   final ValueNotifier<List<Event>> _selectedEvents = ValueNotifier([]);
 
   // Using a `LinkedHashSet` is recommended due to equality comparison override

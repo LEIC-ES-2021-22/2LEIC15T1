@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../model/Profile.dart';
 import 'NavBar.dart';
 import 'package:settings_ui/settings_ui.dart';
 class Settings extends StatefulWidget {
@@ -10,6 +11,7 @@ class Settings extends StatefulWidget {
 
 class SettingsStatus extends State<Settings> {
   bool isSwitched = false;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

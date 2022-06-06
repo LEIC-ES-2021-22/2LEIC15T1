@@ -5,28 +5,26 @@ import 'Course.dart';
 
 
 @JsonSerializable()
-class User {
+class Profile{
    String name;
    String email;
   List<Course> courses;
 
-  User({
+  Profile({
     this.name = '',
     this.email = '',
     required this.courses});
 
-   static User fromJson(Map<String,dynamic> json) {
+   /// Creates a new instance from a JSON object.
+   static Profile fromResponse(dynamic response) {
+     final responseBody = json.decode(response.body);
      final List<Course> courses = <Course>[];
-     /*
-     for (var c in json['cursos']) {
-       print(c);
+     for (var c in responseBody['cursos']) {
        courses.add(Course.fromJson(c));
      }
-     */
-
-     return User(
-         name: json['nome'],
-         email: json['email'],
+     return Profile(
+         name: responseBody['nome'],
+         email: responseBody['email'],
          courses: courses);
    }
     /*

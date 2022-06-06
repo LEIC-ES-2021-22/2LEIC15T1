@@ -10,7 +10,7 @@ class CourseUnit {
   String abbreviation;
   String name;
   int curricularYear;
-  int semesterCode;
+  String semesterCode;
   String semesterName;
   String grade;
   String ectsGrade;

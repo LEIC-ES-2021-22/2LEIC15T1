@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
+import '../model/Profile.dart';
 import 'NavBar.dart';
 import 'utils.dart';
 import 'dart:collection';
 import 'package:table_calendar/table_calendar.dart';
 
-class MyStatefulWidgeta extends StatefulWidget {
-  const MyStatefulWidgeta({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
-  State<MyStatefulWidgeta> createState() => _MyStatefulWidgetStatea();
+  State<HomePage> createState() => _HomePageState();
   
 }
 
-class _MyStatefulWidgetStatea extends State<MyStatefulWidgeta> {
+class _HomePageState extends State<HomePage> {
   final ValueNotifier<List<Event>> _selectedEvents = ValueNotifier([]);
+
+
 
   void initState() {
     super.initState();

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sigarraio/UI/welcomepage.dart';
 
 import 'UI/login.dart';
 
@@ -14,7 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: _title,
-      home : WelcomePage(),
+      home : LoginPageView(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

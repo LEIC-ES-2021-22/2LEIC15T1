@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:sigarraio/UI/login.dart';
 import 'package:sigarraio/UI/personalschedule.dart';
 import 'package:sigarraio/UI/settings.dart';
-import 'package:sigarraio/UI/welcomepage.dart';
-
+import 'package:http/http.dart' as http;
+import 'package:sigarraio/controller/login_action.dart';
 import '../controller/logout_action.dart';
+import '../model/Profile.dart';
 import 'academicpathway.dart';
 import 'homepage.dart';
 
@@ -14,16 +16,15 @@ class NavBar extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => NavBarState();
 
-
 }
 
 class NavBarState extends State<NavBar> {
-   String email = '';
+  String email = '';
+  String name = '';
 
   @override
   Widget build(BuildContext context) {
     updateInfo();
-
     return Drawer(
       backgroundColor: Colors.white,
       child: ListView(
@@ -31,7 +32,7 @@ class NavBarState extends State<NavBar> {
         children: [
           UserAccountsDrawerHeader(
             decoration: BoxDecoration(color: Colors.white),
-            accountName: Text('Username',style: TextStyle(color: Colors.black),),
+            accountName: Text(name,style: TextStyle(color: Colors.black),),
             accountEmail: Text(email,style: TextStyle(color: Colors.black),),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
@@ -49,7 +50,7 @@ class NavBarState extends State<NavBar> {
             title: const Text('Dashboard'),
             onTap: () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => MyStatefulWidgeta()),
+              MaterialPageRoute(builder: (context) => HomePage()),
             ),
           ),
           ListTile(
@@ -85,7 +86,7 @@ class NavBarState extends State<NavBar> {
             onTap: () async {
               bool loggedOut = await logout();
               if (loggedOut) {
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => WelcomePage(),),);
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginPageView(),),);
               }
             },
           ),
@@ -96,11 +97,11 @@ class NavBarState extends State<NavBar> {
 
   void updateInfo() async {
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    getProfile();
     setState(() {
-      email = sharedPreferences.getString('codigo')! + '@up.pt';
+      name = sharedPreferences.getString('nome')!;
+      email = 'up'+ sharedPreferences.getString('codigo')! + '@up.pt';
     });
-    //name = sharedPreferences.getString(key)
   }
-
 
 }

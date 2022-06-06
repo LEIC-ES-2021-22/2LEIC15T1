@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../controller/login_action.dart';
-import '../model/User.dart';
+import '../model/Profile.dart';
 import '../model/Session.dart';
 import 'homepage.dart';
 
@@ -27,7 +27,10 @@ class _LoginPageViewState extends State<LoginPageView>  {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('SigarraIO')),
+      appBar: AppBar(title: const Text('Login',style:TextStyle(color: Colors.black)),
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        iconTheme: IconThemeData(color: Colors.black),),
       body: Padding(
           padding: const EdgeInsets.all(10),
           child:  Form(
@@ -40,7 +43,7 @@ class _LoginPageViewState extends State<LoginPageView>  {
                       child: const Text(
                         'SigarraIO',
                         style: TextStyle(
-                            color: Colors.blue,
+                            color: Colors.black,
                             fontWeight: FontWeight.w500,
                             fontSize: 30),
                       )),
@@ -94,6 +97,7 @@ class _LoginPageViewState extends State<LoginPageView>  {
                       margin: const EdgeInsets.symmetric(vertical: 20),
                       padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                       child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(primary : Colors.black),
                         child: const Text('Login'),
                         onPressed: () async {
                           FocusScopeNode currentFocus = FocusScope.of(context);
@@ -103,7 +107,7 @@ class _LoginPageViewState extends State<LoginPageView>  {
                               currentFocus.unfocus();
                             }
                             if (loggedIn){
-                              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => MyStatefulWidgeta(),),);
+                              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage(),),);
                             }
                             else {
                               _pass.clear();
