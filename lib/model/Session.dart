@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
 
 // Allows passing cookies between HTTP requests.
 class Session {
@@ -13,7 +14,7 @@ class Session {
     var response = await http.post(Uri.parse(url), body: data, headers: _headers);
     if (response.statusCode == 200) {
       _updateCookie(response);
-      return json.decode(response.body);
+      return response;
     }
     else {
       throw Exception('Failed to access $url');
@@ -25,6 +26,9 @@ class Session {
   Future<dynamic> get(String url) async {
     var response = await http.get(Uri.parse(url), headers: _headers);
     if (response.statusCode == 200) {
+      final body = jsonDecode(response.body);
+      SharedPreferences pref = await SharedPreferences.getInstance();
+      await pref.setString("login", body['token']);
       _updateCookie(response);
       return json.decode(response.body);
     }

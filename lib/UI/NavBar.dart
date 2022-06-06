@@ -1,13 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sigarraio/UI/personalschedule.dart';
 import 'package:sigarraio/UI/settings.dart';
+import 'package:sigarraio/UI/welcomepage.dart';
 
+import '../controller/logout_action.dart';
 import 'academicpathway.dart';
 import 'homepage.dart';
 
-class NavBar extends StatelessWidget {
+class NavBar extends StatefulWidget {
+  //String name;
+
+  @override
+  State<StatefulWidget> createState() => NavBarState();
+
+
+}
+
+class NavBarState extends State<NavBar> {
+   String email = '';
+
   @override
   Widget build(BuildContext context) {
+    updateInfo();
+
     return Drawer(
       backgroundColor: Colors.white,
       child: ListView(
@@ -15,12 +31,12 @@ class NavBar extends StatelessWidget {
         children: [
           UserAccountsDrawerHeader(
             decoration: BoxDecoration(color: Colors.white),
-            accountName: const Text('Username',style: TextStyle(color: Colors.black),),
-            accountEmail: const Text('example@gmail.com',style: TextStyle(color: Colors.black),),
+            accountName: Text('Username',style: TextStyle(color: Colors.black),),
+            accountEmail: Text(email,style: TextStyle(color: Colors.black),),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
                 child: Image.network(
-                    'https://www.w3schools.com/howto/img_avatar.png',
+                  'https://www.w3schools.com/howto/img_avatar.png',
                   fit: BoxFit.cover,
                   width: 90,
                   height: 90,
@@ -66,10 +82,25 @@ class NavBar extends StatelessWidget {
           ListTile(
             title: const Text('Logout'),
             leading: const Icon(Icons.exit_to_app),
-            onTap: () => null,
+            onTap: () async {
+              bool loggedOut = await logout();
+              if (loggedOut) {
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => WelcomePage(),),);
+              }
+            },
           ),
         ],
       ),
     );
   }
+
+  void updateInfo() async {
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    setState(() {
+      email = sharedPreferences.getString('codigo')! + '@up.pt';
+    });
+    //name = sharedPreferences.getString(key)
+  }
+
+
 }

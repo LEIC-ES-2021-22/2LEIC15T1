@@ -61,6 +61,7 @@ class _Body extends StatelessWidget{
           child: Column(
             children: <Widget> [
               Row(
+
                 children: <Widget>[
                   Expanded(child:Center(child: FlatButton(onPressed: null,child:Text('Sistemas Operativos'),))),
                   Expanded(child:Center(child: Text('aprovado'),)),
@@ -124,6 +125,7 @@ class _Body extends StatelessWidget{
                 ),
               ),
               Row(
+
                 children: <Widget>[
                   Expanded(child:Center(child: Text('carlossssss'),)),
                   Expanded(child:Center(child: Text('carlossssss'),)),

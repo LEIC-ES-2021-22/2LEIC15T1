@@ -9,6 +9,7 @@ class MyStatefulWidgeta extends StatefulWidget {
 
   @override
   State<MyStatefulWidgeta> createState() => _MyStatefulWidgetStatea();
+  
 }
 
 class _MyStatefulWidgetStatea extends State<MyStatefulWidgeta> {
@@ -58,7 +59,9 @@ class _MyStatefulWidgetStatea extends State<MyStatefulWidgeta> {
       home: Scaffold(
         drawer: NavBar(),
         appBar: AppBar(
-          title: const Text('DashBoard'),
+          title: const Text('DashBoard',style:TextStyle(color: Colors.black)),
+          backgroundColor: Colors.white,
+          iconTheme: IconThemeData(color: Colors.black),
         ),
         body: Column(
           children: [
