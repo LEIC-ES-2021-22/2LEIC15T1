@@ -17,7 +17,7 @@ class AcademicPathwayStatus extends State<AcademicPathway> {
 
   @override
   void initState() {
-    /*getCurrentCourseUnits().then((data) {
+    getCurrentCourseUnits().then((data) {
       setState(() {
         for (var course in data) {
           for (var uc in course['inscricoes']) {
@@ -26,8 +26,6 @@ class AcademicPathwayStatus extends State<AcademicPathway> {
         }
       });
     });
-
-     */
     super.initState();
   }
 

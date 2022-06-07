@@ -1,4 +1,4 @@
-/*
+
 import 'dart:convert';
 
 import 'dart:io';
@@ -9,7 +9,7 @@ import '../model/CourseUnit.dart';
 import '../model/Profile.dart';
 import '../model/Session.dart';
 import 'package:http/http.dart' as http;
-//import 'package:query_params/query_params.dart';
+import 'package:query_params/query_params.dart';
 
 extension UriString on String{
   /// Converts a [String] to an [Uri].
@@ -123,4 +123,3 @@ Future getCurrentCourseUnits() async {
   return <CourseUnit>[];
 }
 
- */

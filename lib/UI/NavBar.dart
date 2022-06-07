@@ -97,7 +97,7 @@ class NavBarState extends State<NavBar> {
 
   void updateInfo() async {
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
-   // getProfile();
+    getProfile();
     setState(() {
       name = sharedPreferences.getString('nome')!;
       email = 'up'+ sharedPreferences.getString('codigo')! + '@up.pt';
