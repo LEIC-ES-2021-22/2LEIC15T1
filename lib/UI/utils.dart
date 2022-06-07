@@ -1,6 +1,20 @@
 // Copyright 2019 Aleksander Woźniak
 // SPDX-License-Identifier: Apache-2.0
 
+import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import '../controller/login_action.dart';
+import '../model/Profile.dart';
+import '../model/Session.dart';
+import 'homepage.dart';
+import 'package:flutter/material.dart';
+import 'dart:io';
+import 'dart:convert';
+import 'dart:async';
+import 'package:flutter/services.dart';
+import 'dart:convert';
+
 import 'dart:collection';
 
 import 'package:table_calendar/table_calendar.dart';
@@ -19,16 +33,35 @@ class Event {
 final kEvents = LinkedHashMap<DateTime, List<Event>>(
   equals: isSameDay,
   hashCode: getHashCode,
-)..addAll(_kEventSource);
+)..addAll(loadJson());
 
 
-/// Alter this to get events from JSON file
-final _kEventSource = {
-  for (var item in List.generate(50, (index) => index))
-    DateTime.utc(kFirstDay.year, kFirstDay.month, item * 5) :
-    List.generate(item % 4 + 1, (index) => Event('Event $item | ${index + 1}'))
-} ..addAll({kToday: [Event('Today\'s Event 1'), Event('Today\'s Event 2'),],
+Future<Map<DateTime, List<Event>>> loadEvents() async {
+  String data = await rootBundle.loadString('json/activities.json');
+  final parsedJson = json.decode(data);
+
+  final _kEventSource = {
+    for (var item in parsedJson)
+      DateTime.utc(kFirstDay.year, kFirstDay.month, item['day'] as int) :
+      List.generate(1, (index) => Event(item['title'] as String))
+  } ..addAll({kToday: [Event('ES Class'), Event('SO Class'),],
   });
+  return _kEventSource;
+}
+
+loadJson() async {
+  String data = await rootBundle.loadString('json/activities.json');
+  final parsedJson = json.decode(data);
+
+  final _kEventSource = {
+    for (var item in parsedJson)
+      DateTime.utc(kFirstDay.year, kFirstDay.month, item['day'] as int) :
+      List.generate(1, (index) => Event(item['title'] as String))
+  } ..addAll({kToday: [Event('Today\'s Event 1'), Event('Today\'s Event 2'),],
+  });
+  return _kEventSource;
+}
+
 
 int getHashCode(DateTime key) {
   return key.day * 1000000 + key.month * 10000 + key.year;
@@ -44,6 +77,6 @@ List<DateTime> daysInRange(DateTime first, DateTime last) {
 }
 
 final kToday = DateTime.now();
-final kFirstDay = DateTime(kToday.year, kToday.month - 3, kToday.day);
-final kLastDay = DateTime(kToday.year, kToday.month + 3, kToday.day);
+final kFirstDay = DateTime(kToday.year, kToday.month - 6, kToday.day);
+final kLastDay = DateTime(kToday.year, kToday.month + 6, kToday.day);
 
