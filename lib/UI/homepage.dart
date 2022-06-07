@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../controller/login_action.dart';
+import '../model/CourseUnit.dart';
 import '../model/Profile.dart';
 import 'NavBar.dart';
 import 'utils.dart';
@@ -18,11 +20,32 @@ class _HomePageState extends State<HomePage> {
 
   Map<DateTime, List<Event>> events ={};
 
+  List<CourseUnit> ucsFiltered = <CourseUnit>[];
+
+  String currentSemester = '';
+
   void initState() {
     super.initState();
     WidgetsBinding.instance?.addPostFrameCallback((_) async {
       await loadEvents() ;
       WidgetsBinding.instance!.addPostFrameCallback((_) => _onDaySelected(kToday));
+    });
+    getCurrentCourseUnits().then((data) {
+      setState(() {
+        if (kToday.month >= 2 && kToday.month <=8) {
+          currentSemester = '2S';
+        }
+        else {
+          currentSemester = '1S';
+        }
+        for (var course in data) {
+          for (var uc in course['inscricoes']) {
+            if (CourseUnit.fromJson(uc).semesterCode == currentSemester){
+              ucsFiltered.add(CourseUnit.fromJson(uc));
+            }
+          }
+        }
+      });
     });
   }
 
@@ -72,6 +95,30 @@ class _HomePageState extends State<HomePage> {
         body: Column(
           children: [
             Container(
+              margin: const EdgeInsets.only(top:20,left:20,bottom:5.0),
+              alignment: Alignment.centerLeft,
+              child: const Text('Current Semester',style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+            ),
+            Container(
+                child: ucsFiltered.length > 0
+                    ? ListView.builder(
+                    shrinkWrap: true,
+                    itemCount: ucsFiltered.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      return Container(
+                          padding: EdgeInsets.all(8),
+                          child: Row(children: <Widget>[
+                            Expanded(child: Center(child: Text(ucsFiltered[index].code))),
+                            Expanded(child: Center(child: Text(ucsFiltered[index].name, textAlign: TextAlign.left,
+                            ))),
+                            Expanded(child: Center(child: Text(ucsFiltered[index].grade, style: TextStyle(fontWeight: FontWeight.bold),
+                            ))),
+                          ]));
+                    })
+                    : Center(
+                  child: CircularProgressIndicator(),
+                )),
+            Container(
               margin: const EdgeInsets.only(top:30,left:20),
               alignment: Alignment.centerLeft,
               child: const Text('Today\'s Schedule',style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
@@ -112,33 +159,7 @@ class _HomePageState extends State<HomePage> {
                   return CircularProgressIndicator();
                 }
             ),
-            Container(
-              margin: const EdgeInsets.only(top:30,left:20),
-              alignment: Alignment.centerLeft,
-              child: const Text('Current Semester',style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
-            ),
-            Container(
-              margin: const EdgeInsets.all(15.0),
-              padding : const EdgeInsets.symmetric(
-                vertical:1.0,
-                horizontal: 10.0,
-              ),
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(7.50),
-                  boxShadow: const [
-                    BoxShadow(
-                      color:Colors.grey,
-                      offset:Offset(
-                        5.0,
-                        5.0,
-                      ),
-                      blurRadius:10.0,
-                      spreadRadius:1.0,
-                    )
-                  ]
-              ),
-            ),
+
           ],
         ),
       ),

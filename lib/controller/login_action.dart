@@ -104,7 +104,7 @@ Future getCurrentCourseUnits() async {
 
   if (response.statusCode == 200){
     print("RESPOSTA DE COURSE UNITS\n");
-    print(response.body);
+    //print(response.body);
     final responseBody = json.decode(response.body);
     return responseBody;
     /*
