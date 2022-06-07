@@ -91,7 +91,7 @@ String baseUrl, Map<String, String> query) async {
 
 
 /// Returns the user's current list of [CourseUnit].
-Future<List<CourseUnit>> getCurrentCourseUnits() async {
+Future getCurrentCourseUnits() async {
   SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
   var studentNumber = sharedPreferences.getString('codigo');
 
@@ -103,6 +103,8 @@ Future<List<CourseUnit>> getCurrentCourseUnits() async {
     print("RESPOSTA DE COURSE UNITS\n");
     print(response.body);
     final responseBody = json.decode(response.body);
+    return responseBody;
+    /*
     final List<CourseUnit> ucs = <CourseUnit>[];
     for (var course in responseBody){
       for (var uc in course['inscricoes']){
@@ -111,6 +113,8 @@ Future<List<CourseUnit>> getCurrentCourseUnits() async {
     }
 
     return ucs;
+    */
+
   }
 
   return <CourseUnit>[];
