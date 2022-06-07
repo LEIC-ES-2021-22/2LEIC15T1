@@ -6,17 +6,28 @@ import '../controller/login_action.dart';
 import '../model/Profile.dart';
 import '../model/Session.dart';
 import 'homepage.dart';
+import 'package:flutter/material.dart';
+import 'dart:io';
+import 'dart:convert';
+import 'dart:async';
+import 'package:flutter/services.dart';
+import 'dart:convert';
+
 
 
 
 class LoginPageView extends StatefulWidget {
   LoginPageView({Key? key}) : super(key:key);
+
   @override
   _LoginPageViewState createState() => _LoginPageViewState();
 }
 
 
 class _LoginPageViewState extends State<LoginPageView>  {
+
+
+
   TextEditingController nameController = TextEditingController();
   TextEditingController _pass = TextEditingController();
 

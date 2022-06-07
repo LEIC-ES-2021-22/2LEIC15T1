@@ -2,13 +2,13 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import 'dart:collection';
-
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 import '../model/Profile.dart';
 import 'utils.dart';
 import 'NavBar.dart';
+
 
 class PersonalSchedule extends StatefulWidget {
   const PersonalSchedule({Key? key}) : super(key: key);
@@ -19,6 +19,14 @@ class PersonalSchedule extends StatefulWidget {
 
 class PersonalScheduleStatus extends State<PersonalSchedule> {
 
+  Map<DateTime, List<Event>> events ={};
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance?.addPostFrameCallback((_) async {
+      await loadEvents();
+    });
+  }
   final ValueNotifier<List<Event>> _selectedEvents = ValueNotifier([]);
 
   // Using a `LinkedHashSet` is recommended due to equality comparison override
@@ -37,7 +45,7 @@ class PersonalScheduleStatus extends State<PersonalSchedule> {
   }
 
   List<Event> _getEventsForDay(DateTime day) {
-    return kEvents[day] ?? [];
+    return events[day] ?? [];
   }
 
   List<Event> _getEventsForDays(Set<DateTime> days) {
@@ -74,27 +82,37 @@ class PersonalScheduleStatus extends State<PersonalSchedule> {
         ),
       body: Column(
         children: [
-          TableCalendar<Event>(
-            firstDay: kFirstDay,
-            lastDay: kLastDay,
-            focusedDay: _focusedDay,
-            calendarFormat: _calendarFormat,
-            eventLoader: _getEventsForDay,
-            startingDayOfWeek: StartingDayOfWeek.monday,
-            selectedDayPredicate: (day) {
-              return _selectedDays.contains(day);
-            },
-            onDaySelected: _onDaySelected,
-            onFormatChanged: (format) {
-              if (_calendarFormat != format) {
-                setState(() {
-                  _calendarFormat = format;
-                });
+          FutureBuilder<Map<DateTime, List<Event>>>(
+              future: loadEvents(),
+              builder: (context, snapshot) {
+                if (snapshot.hasData) {
+                  events = snapshot.data!;
+                  return TableCalendar<Event>(
+                    firstDay: kFirstDay,
+                    lastDay: kLastDay,
+                    focusedDay: _focusedDay,
+                    calendarFormat: _calendarFormat,
+                    eventLoader: _getEventsForDay,
+                    startingDayOfWeek: StartingDayOfWeek.monday,
+                    selectedDayPredicate: (day) {
+                      return _selectedDays.contains(day);
+                    },
+                    onDaySelected: _onDaySelected,
+                    onFormatChanged: (format) {
+                      if (_calendarFormat != format) {
+                        setState(() {
+                          _calendarFormat = format;
+                        });
+                      }
+                    },
+                    onPageChanged: (focusedDay) {
+                      _focusedDay = focusedDay;
+                    },
+                  );
+                }
+                  return CircularProgressIndicator();
+
               }
-            },
-            onPageChanged: (focusedDay) {
-              _focusedDay = focusedDay;
-            },
           ),
           const SizedBox(height: 8.0),
           Expanded(
