@@ -102,11 +102,12 @@ class _LoginPageViewState extends State<LoginPageView>  {
                         onPressed: () async {
                           FocusScopeNode currentFocus = FocusScope.of(context);
                           if (_formKey.currentState!.validate()){
-                            bool loggedIn = await login(nameController.text,_pass.text);
+                            //bool loggedIn = await login(nameController.text,_pass.text);
+                            bool loggedI = true;
                             if (!currentFocus.hasPrimaryFocus){
                               currentFocus.unfocus();
                             }
-                            if (loggedIn){
+                            if (true){
                               Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage(),),);
                             }
                             else {

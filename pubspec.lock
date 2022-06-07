@@ -161,7 +161,7 @@ packages:
       name: cupertino_icons
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.4"
+    version: "1.0.5"
   dart_style:
     dependency: transitive
     description:
@@ -408,13 +408,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.0"
-  query_params:
-    dependency: "direct main"
-    description:
-      name: query_params
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.6.1"
   settings_ui:
     dependency: "direct main"
     description:
