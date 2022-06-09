@@ -27,3 +27,9 @@ linter:
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
+analyzer:
+  errors:
+    # allow for asset_does_not_exist
+    unrecognized_error_code: ignore
+    # ignore this in pubspec.yaml
+    asset_directory_does_not_exist: ignore
